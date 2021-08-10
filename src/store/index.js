@@ -3,6 +3,8 @@ import { mainReducer } from '../reducers'
 
 export const initialState = {
   count: 0,
+  strive: 'school',
+  books: [],
 }
 
 const configureStore = createStore(

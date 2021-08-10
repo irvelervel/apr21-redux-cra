@@ -6,12 +6,12 @@ export const mainReducer = (state = initialState, action) => {
       return {
         // new state if we encounter an action of type 'INCREMENT'
         ...state,
-        count: state.count + 1,
+        count: state.count + action.payload,
       }
     case 'DECREMENT':
       return {
         ...state,
-        count: state.count - 1,
+        count: state.count - action.payload,
       }
     default:
       return state
